@@ -2,15 +2,24 @@
   "sites": [
     {
       "key": "wlzy",
-      "name": "稳定影视（有分类）",
+      "name": "🔥稳定影视（分类）",
       "type": 0,
       "api": "https://cj.wlzy.tv/api.php/provide/vod/at/xml/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "ikun",
+      "name": "🎬爱坤影视（分类）",
+      "type": 0,
+      "api": "https://ikunzyapi.com/api.php/provide/vod/at/xml/",
       "searchable": 1,
       "quickSearch": 1
     },
     {
       "key": "lzi",
-      "name": "量子秒播",
+      "name": "🚀量子秒播",
       "type": 1,
       "api": "https://cj.lziapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -18,19 +27,50 @@
     },
     {
       "key": "ffzy",
-      "name": "高速备用",
+      "name": "⚡高速备用",
       "type": 1,
       "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1
     }
   ],
+
   "parses": [
     {
-      "name": "默认解析",
+      "name": "🔥主解析",
       "type": 0,
       "url": "https://jx.playerjy.com/?url="
+    },
+    {
+      "name": "⚡备用解析",
+      "type": 0,
+      "url": "https://jx.jsonplayer.com/player/?url="
     }
   ],
-  "lives": []
+
+  "flags": [
+    "youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu"
+  ],
+
+  "ijk": [
+    {
+      "group": "推荐（硬解）",
+      "options": [
+        { "category": 4, "name": "mediacodec", "value": "1" },
+        { "category": 4, "name": "mediacodec-hevc", "value": "1" },
+        { "category": 4, "name": "mediacodec-auto-rotate", "value": "1" },
+        { "category": 4, "name": "mediacodec-handle-resolution-change", "value": "1" },
+        { "category": 4, "name": "framedrop", "value": "1" },
+        { "category": 4, "name": "reconnect", "value": "1" },
+        { "category": 4, "name": "max-buffer-size", "value": "10485760" }
+      ]
+    }
+  ],
+
+  "ads": [
+    "googletagmanager.com",
+    "google-analytics.com",
+    "cnzz.com",
+    "hm.baidu.com"
+  ]
 }
