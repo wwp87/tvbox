@@ -1,0 +1,36 @@
+{
+  "sites": [
+    {
+      "key": "wlzy",
+      "name": "稳定影视（有分类）",
+      "type": 0,
+      "api": "https://cj.wlzy.tv/api.php/provide/vod/at/xml/",
+      "searchable": 1,
+      "quickSearch": 1
+    },
+    {
+      "key": "lzi",
+      "name": "量子秒播",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1
+    },
+    {
+      "key": "ffzy",
+      "name": "高速备用",
+      "type": 1,
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1
+    }
+  ],
+  "parses": [
+    {
+      "name": "默认解析",
+      "type": 0,
+      "url": "https://jx.playerjy.com/?url="
+    }
+  ],
+  "lives": []
+}
