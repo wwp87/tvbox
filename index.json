@@ -1,5 +1,5 @@
 {
-  "spider": "https://fastly.jsdelivr.net/gh/wwp87/tvbox@main/custom.jar;md5;1234567890abcdef1234567890abcdef",
+  "spider": "https://fastly.jsdelivr.net/gh/qist/tvbox@main/jar/custom.jar",
   "wallpaper": "https://picsum.photos/1920/1080",
   "sites": [
     {
@@ -12,20 +12,19 @@
       "filterable": 0
     },
     {
-      "key": "csp_AppYS",
-      "name": "影视主源 (稳定)",
-      "type": 3,
-      "api": "csp_AppYS",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://cj.lziapi.com/api.php/provide/vod/"
-    },
-    {
       "key": "csp_Quanji",
-      "name": "采集备用源",
+      "name": "量子影视 (直连)",
       "type": 1,
       "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "csp_FF",
+      "name": "非凡资源 (备用)",
+      "type": 1,
+      "api": "http://cj.ffzyapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -33,9 +32,20 @@
   ],
   "parses": [
     {
-      "name": "并发并发",
+      "name": "并发解析",
       "type": 2,
       "url": "Parallel"
     }
+  ],
+  "flags": [
+    "youku",
+    "qq",
+    "iqiyi",
+    "qiyi",
+    "letv",
+    "sohu",
+    "tudou",
+    "pptv",
+    "mgtv"
   ]
 }
