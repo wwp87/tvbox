@@ -1,5 +1,5 @@
 {
-  "spider": "https://fastly.jsdelivr.net/gh/qist/tvbox@main/jar/custom.jar;md5;1234567890abcdef1234567890abcdef",
+  "spider": "https://fastly.jsdelivr.net/gh/wwp87/tvbox@main/custom.jar;md5;1234567890abcdef1234567890abcdef",
   "wallpaper": "https://picsum.photos/1920/1080",
   "sites": [
     {
@@ -19,11 +19,11 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://your-domain.com/api.php"
+      "ext": "https://cj.lziapi.com/api.php/provide/vod/"
     },
     {
       "key": "csp_Quanji",
-      "name": "备用影视",
+      "name": "采集备用源",
       "type": 1,
       "api": "https://cj.lziapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -33,25 +33,9 @@
   ],
   "parses": [
     {
-      "name": "并发解析",
+      "name": "并发并发",
       "type": 2,
       "url": "Parallel"
-    },
-    {
-      "name": "聚合解析",
-      "type": 3,
-      "url": "Demo"
     }
-  ],
-  "flags": [
-    "youku",
-    "qq",
-    "iqiyi",
-    "qiyi",
-    "letv",
-    "sohu",
-    "tudou",
-    "pptv",
-    "mgtv"
   ]
 }
